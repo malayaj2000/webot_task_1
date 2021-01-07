@@ -1,0 +1,180 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation 0.980391609379287 -0.17196444441109773 -0.09623160664289991 5.313152076969325
+  position 0.820694776932993 2.883148250204913 4.234092071901775
+}
+TexturedBackground {
+}
+Floor {
+  appearance Parquetry {
+    type "chequered"
+    colorOverride 0.9 1 1
+  }
+}
+DEF road1 Solid {
+  translation -0.04 0.001 2.3
+  children [
+    DEF shape_6 Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+      }
+      geometry Box {
+        size 0.03 1e-07 1.4
+      }
+    }
+  ]
+  name "solid(5)"
+  boundingObject USE shape_6
+}
+DEF road4 Solid {
+  translation 0.73 0.001 2.814
+  children [
+    DEF shape_9 Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+      }
+      geometry Box {
+        size 0.03 1e-07 0.375
+      }
+    }
+  ]
+  name "solid(8)"
+  boundingObject USE shape_9
+}
+DEF road5 Solid {
+  translation 0.73 0.001 2.5
+  children [
+    DEF shape_10 Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+      }
+      geometry Box {
+        size 0.25 1e-07 0.25
+      }
+    }
+  ]
+  name "solid(9)"
+  boundingObject USE shape_10
+}
+DEF road2 Solid {
+  translation 0.37 0.001 2.17
+  rotation 0 1 0 1.5708
+  children [
+    DEF shape_7 Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+      }
+      geometry Box {
+        size 0.03 1e-07 0.8
+      }
+    }
+  ]
+  name "solid(6)"
+  boundingObject USE shape_7
+}
+DEF road3 Solid {
+  translation 0.345 0.001 2.99
+  rotation 0 1 0 1.5708
+  children [
+    DEF shape_8 Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+      }
+      geometry Box {
+        size 0.03 1e-07 0.8
+      }
+    }
+  ]
+  name "solid(7)"
+  boundingObject USE shape_8
+}
+DEF wall_1 Solid {
+  translation -0.24 0.148822 1.81
+  rotation 0.20929886036017098 0.006117642490731817 -0.9778325835756801 -5.112277080488552e-17
+  children [
+    DEF shape1 Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        metalness 0
+      }
+      geometry Box {
+        size 0.02 0.3 0.5
+      }
+    }
+  ]
+  boundingObject USE shape1
+}
+DEF wall_2 Solid {
+  translation 0.35 0.148822 1.57
+  rotation 0 1 0 1.5708
+  children [
+    DEF shape2 Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        metalness 0
+      }
+      geometry Box {
+        size 0.02 0.3 1.2
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject USE shape2
+}
+DEF wall_3 Solid {
+  translation 1.06 0.148822 1.97
+  rotation 0 1 0 1.5708
+  children [
+    DEF shape3 Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        metalness 0
+      }
+      geometry Box {
+        size 0.02 0.3 0.8
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject USE shape3
+}
+DEF wall_4 Solid {
+  translation 1.45 0.148822 2.33
+  rotation 0 -1 0 -5.307179586466759e-06
+  children [
+    DEF shape4 Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        metalness 0
+      }
+      geometry Box {
+        size 0.02 0.3 0.7
+      }
+    }
+  ]
+  name "solid(3)"
+  boundingObject USE shape4
+}
+DEF cylinder_wall_1 Solid {
+  translation 1.45 0.15 2.83
+  rotation 0 0 1 3.14159
+  children [
+    DEF shape5 Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        metalness 0
+      }
+      geometry Cylinder {
+        height 0.3
+        radius 0.15
+      }
+    }
+  ]
+  name "solid(4)"
+  boundingObject USE shape5
+}
+TexturedBackgroundLight {
+}
